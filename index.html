@@ -24,6 +24,13 @@
     // buildPeter() // should return { firstName: "Peter", lastName: "Pan", age: 12 }
     function buildPeter() {
 
+      var personObj = {
+        firstName: "Peter",
+        lastName: "Pan",
+        age:12
+      }
+
+      return personObj;
     }
 
     // 👉 CHALLENGE 2
@@ -32,6 +39,12 @@
     // buildUser("John", "Smith", 30) // should return { firstName: "John", lastName: "Smith", age: 30 }
     function buildUser(firstName, lastName, age) {
 
+      var userObject = {
+        firstName: firstName,
+        lastName: lastName,
+        age: age
+      }
+      return userObject;
     }
 
     // 👉 CHALLENGE 3
@@ -42,8 +55,17 @@
     // 🧠 Examples of usage:
     // deletePrice({ item: "Tesla Model 3", price: 40000 }) // should return { item: "Tesla Model 3" }
     // deletePrice({ item: "Kobo Libra 2" }) // should return { item: "Kobo Libra 2", priceless: true }
-    function deletePrice() {
+    function deletePrice(myObj) {
 
+      if(myObj.price === undefined)
+      {
+        myObj['priceless'] = true;
+      }
+      else
+      {
+        delete myObj['price'];
+      }
+      return myObj;
     }
 
     // 👉 CHALLENGE 4
@@ -53,6 +75,7 @@
     // evenList(['a']) // should return false
     // evenList(['a', 'b']) // should return true
     function evenList(arr) {
+
 
     }
 
@@ -64,6 +87,8 @@
     // firstOrLast(['a', 'b'], false) // should return 'b'
     function firstOrLast() {
 
+
+
     }
 
     // 👉 CHALLENGE 6
@@ -73,6 +98,8 @@
     // pushElement([], 1) // should return [1]
     // pushElement(['a', 'b'], 'c') // should return ['a', 'b', 'c']
     function pushElement() {
+
+
 
     }
 
